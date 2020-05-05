@@ -75,12 +75,13 @@ if( not es.indices.exists(index)):
     es.index(index = index2,id=0, doc_type="book", body = testbody) 
 es.indices.refresh(index=index)
 es.indices.refresh(index=index2)
+highest_index = int(es.search(index=index, body={"aggs": {"max_id": {"max" : {"field" : "id" }}},"size":"1"})["aggregations"]["max_id"]["value"])
+i = highest_index
 while True:
     #this search returns highest id in index
     #will only search for one index, as both indexes updates at the same time
-    highest_index = int(es.search(index=index, body={"aggs": {"max_id": {"max" : {"field" : "id" }}},"size":"1"})["aggregations"]["max_id"]["value"])
     fields = ["id", "title", "authors", "num_pages","ratings_count","average_rating","language_code"]
-
+    i+=1
     #refresh index first 
     es.indices.refresh(index=index)
     es.indices.refresh(index=index2)
