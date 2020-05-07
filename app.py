@@ -18,9 +18,20 @@ class BookRecommender:
     def build_window(self):
         #frame = tk.Frame(self.window, background="blue")
         tk.Label(self.window, text="DD 2476 - Book Recommender Engine").pack()
-        leftside = tk.Frame(self.window, bd = 10, background="grey", width=750/3 ).pack(side = tk.LEFT, fill = tk.Y)
-        tk.Label(leftside, text="searawf").pack()
-        rightside = tk.Frame(self.window, background="blue", width=750/3 ).pack(side = tk.RIGHT, fill = tk.Y)
+        leftside = tk.Frame(self.window, bd = 10, background="grey", width=500 )
+        leftside.pack(side = tk.LEFT, fill = tk.Y)
+
+        rightside = tk.Frame(self.window, background="black", width=250 )
+        rightside.pack(side = tk.RIGHT, fill = tk.Y)
+
+        e1 = tk.Entry(leftside, width = 80).pack()
+
+        listbox = tk.Listbox(leftside, width = 80)
+        listbox.pack(fill = tk.BOTH, pady= 5, expand=True)
+
+        savebox = tk.Listbox(rightside, width=100)
+        savebox.pack(fill = tk.BOTH, pady = 10, expand = True)
+
 
 
 
