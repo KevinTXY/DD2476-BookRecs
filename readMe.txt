@@ -24,3 +24,12 @@ And run this to search for instance books that are written by j k rowling
 >print("\n ".join([h['_source']['title'] for h in res['hits']['hits']]))
 
 also try to run Searcher.py, it lets you first search for books and and then will look for similar books. 
+
+
+### Web Scraper ###
+A web scraper was included that crawls looking for users with many books read and records their favorite book id's in order sorted by rank. To run this script, the following needs to be done:
+* Install Selenium, the line below should do this
+  > pip install selenium
+* Download the webdriver from a browser you'd like to use, these are small ~4mb files. The link for the chrome driver is https://chromedriver.chromium.org/downloads
+* Edit line 14 to instantiate the correct browser driver. If not using chromium edge, replace "Edge" with "Chrome" or "Firefox", and then replace 'msedgedriver.exe' with a path to the web driver file you instantiated above.
+* The code should now run. If needed, change the parameters such as userid, minbooks, usersleft.
