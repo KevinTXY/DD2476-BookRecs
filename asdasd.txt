@@ -1,0 +1,110 @@
+books used for choice 
+fun home: a family tragicomic (38990) 
+on beauty (3679) 
+interpreter of maladies (5439) 
+the namesake (10128) 
+notes 
+type means which searchtype, type1 does multiple searches and then combines the scores type 2 combines first words in every description 
+index means which index, the one that says keywords is the one where every description is keyphrase extracted 
+alpha means how much of the original score is used so alpha = 0 gives all shelfvector similarity 
+information comes as: title, id,score, the extra || is if you want to open it in excel and split it by || might make it easier 
+ ------results----- 
+index:good_reads_keywords type:1 alpha:1>1
+the book of unknown americans||(18465852)| 8.279842267565881 
+هم‌نام||(230313)| 7.73797639330836 
+the namesake: a portrait of the film based on the novel by jhumpa lahiri||(25440)| 6.222086888399395 
+unaccustomed earth||(85301)| 5.693671121261873 
+the lowland||(17262100)| 5.658934401356448 
+those who leave and those who stay (the neapolitan novels, #3)||(23156040)| 5.306900503715148 
+natasha and other stories||(97403)| 5.21478428140813 
+commencement||(6080420)| 5.207183868998047 
+malgudi days||(14082)| 5.193873976642032 
+
+index:good_reads_keywords type:1 alpha:0.5>1
+هم‌نام||(230313)| 0.9084578533939869 
+the book of unknown americans||(18465852)| 0.8853380655164451 
+the lowland||(17262100)| 0.7351593651679798 
+unaccustomed earth||(85301)| 0.7265674157812716 
+the newlyweds||(13093000)| 0.687670965888562 
+liars and saints||(17671)| 0.6830132461116245 
+transit||(29939363)| 0.6784418153381341 
+the woman upstairs||(15701217)| 0.667868726761893 
+commonwealth||(28214365)| 0.6596349414792069 
+
+index:good_reads_keywords type:2 alpha:1>1
+هم‌نام||(230313)| 659.7521 
+the namesake: a portrait of the film based on the novel by jhumpa lahiri||(25440)| 199.75761 
+unaccustomed earth||(85301)| 148.96457 
+the lowland||(17262100)| 137.52893 
+those who leave and those who stay (the neapolitan novels, #3)||(23156040)| 121.292336 
+paris to the moon||(7062)| 112.74031 
+good talk: a memoir in conversations||(36700347)| 109.41921 
+commencement||(6080420)| 109.325294 
+the book of unknown americans||(18465852)| 108.89861 
+
+index:good_reads_keywords type:2 alpha:0.5>1
+هم‌نام||(230313)| 0.9411798459602063 
+the lowland||(17262100)| 0.49765749531546083 
+unaccustomed earth||(85301)| 0.49563449682589833 
+the corrections||(3805)| 0.48363092396963164 
+plainsong (plainsong, #1)||(33389918)| 0.4754130625278054 
+life of pi||(1229)| 0.47518491441410815 
+white teeth||(3711)| 0.47503027096546907 
+the brief wondrous life of oscar wao||(297673)| 0.4730136410536988 
+monkeys||(40049)| 0.47076478131793176 
+
+index:good_reads type:1 alpha:1>1
+the book of unknown americans||(18465852)| 8.381354810630645 
+all our worldly goods||(9568575)| 8.03887968109171 
+هم‌نام||(230313)| 7.745814192134245 
+the namesake: a portrait of the film based on the novel by jhumpa lahiri||(25440)| 6.17165378252831 
+unaccustomed earth||(85301)| 5.493651939934436 
+malgudi days||(14082)| 5.324448196498114 
+brick lane||(18723)| 5.289220118914996 
+those who leave and those who stay (the neapolitan novels, #3)||(23156040)| 5.285224525114501 
+natasha and other stories||(97403)| 5.23775186430037 
+
+index:good_reads type:1 alpha:0.5>1
+هم‌نام||(230313)| 0.9032658909460181 
+the book of unknown americans||(18465852)| 0.8853380655164451 
+unaccustomed earth||(85301)| 0.7104706898655944 
+all our worldly goods||(9568575)| 0.704408357610409 
+the newlyweds||(13093000)| 0.6844306195753762 
+liars and saints||(17671)| 0.6812331602681851 
+transit||(29939363)| 0.6767888875290975 
+the woman upstairs||(15701217)| 0.6655766033261383 
+brick lane||(18723)| 0.6639971574103511 
+
+index:good_reads type:2 alpha:1>1
+هم‌نام||(230313)| 663.9372 
+the namesake: a portrait of the film based on the novel by jhumpa lahiri||(25440)| 193.69334 
+unaccustomed earth||(85301)| 133.00133 
+those who leave and those who stay (the neapolitan novels, #3)||(23156040)| 119.10051 
+the book of unknown americans||(18465852)| 114.19883 
+good talk: a memoir in conversations||(36700347)| 111.334 
+paris to the moon||(7062)| 110.49213 
+commencement||(6080420)| 109.59186 
+malgudi days||(14082)| 108.77946 
+
+index:good_reads type:2 alpha:0.5>1
+هم‌نام||(230313)| 0.9411798459602063 
+the corrections||(3805)| 0.4863469064075199 
+unaccustomed earth||(85301)| 0.4829012230352203 
+life of pi||(1229)| 0.47806071683256346 
+white teeth||(3711)| 0.47736616177468894 
+the brief wondrous life of oscar wao||(297673)| 0.4749985650929693 
+plainsong (plainsong, #1)||(33389918)| 0.4748228607356997 
+the book of unknown americans||(18465852)| 0.4713392942471143 
+monkeys||(40049)| 0.4708259630201109 
+
+index:good_reads type:1 alpha:0>1
+هم‌نام||(230313)| 0.8823596919204126 
+the corrections||(3805)| 0.8391510620850008 
+life of pi||(1229)| 0.8310332325521301 
+the brief wondrous life of oscar wao||(297673)| 0.8275129856011796 
+a son of the circus||(40031)| 0.8207725614451555 
+home||(2924318)| 0.8160662059382241 
+the rules of attraction||(9912)| 0.8148887727293675 
+white noise||(11762)| 0.8078418496351439 
+let the northern lights erase your name||(64482)| 0.7933104187365855 
+
